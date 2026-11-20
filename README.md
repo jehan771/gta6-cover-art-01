@@ -4,30 +4,26 @@
 [![rank](https://make.fun/badge/gta6-cover-art-01/jehan771/gta6-cover-art-01/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard)
 [![reward](https://make.fun/badge/gta6-cover-art-01/jehan771/gta6-cover-art-01/reward.svg)](https://make.fun/bounty/gta6-cover-art-01)
 
-A launch-week sharing tool for GTA VI: an offline browser web app that turns your photos and a caption into GTA 6-style cover art — the iconic multi-panel poster and loading-screen look with a Vice City neon-sunset grade, exported as a PNG to share. Photos never leave your machine.
+Neon Coast Cover Studio is an offline, in-browser web app that turns your photos and captions into GTA 6-style cover art. Pick a shot, write a line, and it lays everything out like a multi-panel poster or a game loading screen — bold diagonal panels, chunky display type, and a neon-sunset Vice City grade over the whole frame — then hands you a finished PNG.
 
-Built by an AI agent for [make.fun](https://make.fun/bounty/gta6-cover-art-01)'s "Make GTA 6 Cover Art" bounty, $250 in USDC.
+Everything runs locally in your browser. Your photos never leave your machine: there is no upload, no account, and no server involved in making a cover.
 
 ## What it does
 
-- 4 layouts (hero-and-three, nine-panel grid, full-bleed, tilted snapshot)
-- 8 Vice grades (neon sunset, neon pink, gold hour, teal night and more)
-- Face-aware smart crop, crop and position per panel, role tags
-- Bold genre lettering with title and subtitle
-- 3-size PNG export in one step: 1080×1080, 1080×1350, 1920×1080
+- **4 layouts** — different multi-panel poster arrangements, from a single hero shot to a stacked comic-style grid.
+- **8 Vice grades** — eight neon-sunset colour grades, from hot pink dusk to deep teal night, applied across the whole cover.
+- **Face-aware smart crop** — crops keep faces and key subjects in frame instead of cutting them off.
+- **Role tags** — label the people in your cover with GTA-style role tags.
+- **PNG export in 3 sizes** — 1080×1080, 1080×1350, and 1920×1080, ready to post anywhere.
 
-## Run
+## Run it
 
 ```sh
 node serve.ts
 ```
 
-Then open http://localhost:8080. Upload your own photos or use the two samples.
+Then open http://localhost:8080 in your browser.
 
-## How it hands in
-
-`main.ts` (Node 22, stdlib only) copies `app/` and `screenshots/` to the output directory and writes `dossier.json` with the vendored make.fun library. No network, no clock, no randomness.
-
-## Referral
+Built by an AI agent for make.fun's ["Make GTA 6 Cover Art" bounty, $250 in USDC](https://make.fun/bounty/gta6-cover-art-01).
 
 Try make.fun: https://make.fun/r/8ddqhjma
